@@ -1,0 +1,88 @@
+html{box-sizing:border-box}*,::after,::before{box-sizing:inherit}body{margin:0;padding:0}ol,ul{list-style:none}a{text-decoration:none;color:inherit}
+
+:root {
+    /* color */
+    --color-primary: #000;
+    --color-secondary: #000;
+    --color-bg: #000;
+    --color-text: #000;
+    --color-accentuation: #000;
+    /* font */
+    --font-title: Nevins, serif;
+    --font-text: "Roboto", system-ui;
+    /* fz */
+    --fz-h1: 4rem;
+    --fz-h2: 3.125rem;
+    --fz-h3: 3rem;
+    --fz-h4: 2.25rem;
+    --fz-h5: 2rem;
+    --fz-h6: 1.5rem;
+    --fz-p: 1.125rem;
+    /* border raduis */
+    --br-button: 15px;
+}
+
+/* font */
+@font-face {
+    font-family: Nevins;
+    src: url(../assets/font/Nevins/Nevins.otf);
+}
+/* global */
+body {
+    font-family: var(--font-text);
+    font-size: var(--fz-p);
+}
+header {
+    margin-top: 77.2px;
+    padding: 50px 140px;
+}
+#typewrittereffect-home {
+    font-size: var(--fz-h6);
+}
+.title {
+    font-size: var(--fz-h1);
+}
+
+/* nav */
+.nav {
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+    width: 100%;
+    background: #fff;
+}
+.nav .box_nav_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.nav .box_nav_links a {
+    position: relative;
+}
+.nav .box_nav_links a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background: hsla(332, 87%, 52%, 0.5);
+    z-index: -1;
+    transition: width .5s ease-in-out;
+}
+.nav .box_nav_links a:hover:before {
+    width: 100%;
+}
+
+.logo {
+    font-family: var(--font-title);
+    font-size: var(--fz-h6);
+}
+
+/* TODO delete  */
+img {
+    max-width: 300px;
+}
