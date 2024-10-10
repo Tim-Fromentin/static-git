@@ -2,4 +2,39 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 77.2px;
+
+}
+#h_home img {
+    border-radius: 50%;
+}
+#sec_h_port {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#sec_h_port .surtitle {
+    margin-bottom: 100px;
+}
+.box_port {
+    box-shadow: 3px -3px 10px 3px #dddddd;
+    border-radius: 25px;
+    width: 400px;
+}
+.box_port img {
+    width: 100%;
+    min-width: 100%;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+}
+.box_port .container_content {
+    padding: 25px;
+    text-align: center;
+}
+.box_port .port_desc {
+    max-height: 100px;
+    overflow-y: scroll;
+    margin: 30px 0;
 }
